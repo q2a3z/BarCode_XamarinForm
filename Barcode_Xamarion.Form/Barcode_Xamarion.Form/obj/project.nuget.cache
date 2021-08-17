@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "fDNxiPPnPoETvAVqiIAHfp9CxTWBE8YXKbatluJEd+RKfAyHjfUUo3+3K/7BBjZ5ZFg536j7Q1Cq8wBxhkzGNA==",
+  "success": true,
+  "projectFilePath": "D:\\Dev_Project\\Barcode_Xamarin.Form\\Barcode_Xamarion.Form\\Barcode_Xamarion.Form\\Barcode_Xamarion.Form.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wayne\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\zxing.net.mobile\\3.0.0-beta5\\zxing.net.mobile.3.0.0-beta5.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\zxing.net.mobile.forms\\3.0.0-beta5\\zxing.net.mobile.forms.3.0.0-beta5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ExM0Aide/MQVpRMivQ5XvtD6EHixBCrQLZW0GYcn9B/3dtP9j/BbSfOVj7mQSEPHXzUWOLO11cfJKbjd5u6H6g==",
+  "success": true,
+  "projectFilePath": "D:\\Dev_Project\\Barcode_Xamarin.Form\\Barcode_Xamarion.Form\\Barcode_Xamarion.Form.iOS\\Barcode_Xamarion.Form.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Wayne\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\zxing.net.mobile\\3.0.0-beta5\\zxing.net.mobile.3.0.0-beta5.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\zxing.net.mobile.forms\\3.0.0-beta5\\zxing.net.mobile.forms.3.0.0-beta5.nupkg.sha512"
+  ],
+  "logs": []
+}

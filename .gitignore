@@ -48,3 +48,8 @@ Thumbs.db
 *.mov
 *.wmv
 
+
+#VS Generate File
+Debug
+Release
+*.suo
