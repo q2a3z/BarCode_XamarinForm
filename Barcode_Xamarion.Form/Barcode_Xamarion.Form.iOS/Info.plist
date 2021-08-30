@@ -34,7 +34,7 @@
 	<string>Barcode_Xamarion.Form</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
+	<key>NSCameraUsageDescription</key>
+	<string>I NEED CAMERA</string>
 </dict>
 </plist>
