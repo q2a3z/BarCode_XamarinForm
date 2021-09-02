@@ -10,4 +10,10 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />  
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="3.0.0-beta5" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\BarcodeScanPage.xaml.cs">
+      <DependentUpon>BarcodeScanPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

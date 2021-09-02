@@ -5,9 +5,9 @@ using Xamarin.Forms.Xaml;
 
 namespace Barcode_Xamarion.Form.Views
 {
-    public partial class AboutPage : ContentPage
+    public partial class BarcodeScanPage : ContentPage
     {
-        public AboutPage()
+        public BarcodeScanPage()
         {
             InitializeComponent();
         }

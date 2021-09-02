@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace Barcode_Xamarion.Form.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class BarcodeScanModel : BaseViewModel
     {
-        public AboutViewModel()
+        public BarcodeScanModel()
         {
-            Title = "Title Camera Sample";
+            Title = "Code Scanner";
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
