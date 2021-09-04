@@ -47,6 +47,7 @@ namespace Barcode_Xamarion.Form.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
+                
             }
             catch (Exception)
             {

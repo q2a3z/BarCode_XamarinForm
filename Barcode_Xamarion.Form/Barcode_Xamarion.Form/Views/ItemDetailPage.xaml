@@ -6,17 +6,19 @@
              xmlns:zxingcommon="clr-namespace:ZXing.Common;assembly=zxing"
              Title="{Binding Title}">
 
-    <StackLayout Spacing="20" Padding="15">
+    <StackLayout Spacing="20" Padding="15" x:Name="stacklayout">
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Text}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Description}" FontSize="Small"/>
 
-        <zxing:ZXingBarcodeImageView BarcodeFormat="EAN_13" BarcodeValue="123456789012" WidthRequest="500" HeightRequest="500">
+        <!--
+        <zxing:ZXingBarcodeImageView BarcodeFormat="{Binding Text}" BarcodeValue="{Binding Description}" WidthRequest="500" HeightRequest="500">
             <zxing:ZXingBarcodeImageView.BarcodeOptions>
                 <zxingcommon:EncodingOptions Height="500" Width="500"/>
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
         </zxing:ZXingBarcodeImageView>
+        -->
     </StackLayout>
 
 </ContentPage>
