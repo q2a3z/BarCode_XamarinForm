@@ -12,13 +12,12 @@
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Description}" FontSize="Small"/>
 
-        <!--
-        <zxing:ZXingBarcodeImageView BarcodeFormat="{Binding Text}" BarcodeValue="{Binding Description}" WidthRequest="500" HeightRequest="500">
+        <zxing:ZXingBarcodeImageView BarcodeFormat="{Binding Codetype}" BarcodeValue="{Binding Description}" WidthRequest="500" HeightRequest="500">
             <zxing:ZXingBarcodeImageView.BarcodeOptions>
                 <zxingcommon:EncodingOptions Height="500" Width="500"/>
             </zxing:ZXingBarcodeImageView.BarcodeOptions>
         </zxing:ZXingBarcodeImageView>
-        -->
+      
     </StackLayout>
 
 </ContentPage>

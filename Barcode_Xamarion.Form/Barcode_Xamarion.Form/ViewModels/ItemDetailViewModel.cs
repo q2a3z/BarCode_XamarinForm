@@ -3,6 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ZXing;
 
 namespace Barcode_Xamarion.Form.ViewModels
 {
@@ -12,6 +13,7 @@ namespace Barcode_Xamarion.Form.ViewModels
         private string itemId;
         private string text;
         private string description;
+        private BarcodeFormat codetype;
         public string Id { get; set; }
 
         public string Text
@@ -24,6 +26,12 @@ namespace Barcode_Xamarion.Form.ViewModels
         {
             get => description;
             set => SetProperty(ref description, value);
+        
+        }
+        public BarcodeFormat Codetype
+        {
+            get => codetype;
+            set => SetProperty(ref codetype, value);
         }
 
         public string ItemId
@@ -47,7 +55,7 @@ namespace Barcode_Xamarion.Form.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
-                
+                Codetype = (BarcodeFormat)Enum.Parse(typeof(BarcodeFormat), Text);   
             }
             catch (Exception)
             {
