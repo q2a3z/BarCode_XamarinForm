@@ -12,18 +12,10 @@ namespace Barcode_Xamarion.Form.Services
 
         public MockDataStore()
         {
+
             items = new List<Item>()
             {
                 new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "EAN_13", Description="123456789012" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "CODE128", Description="387875748478" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "QR_CODE", Description="THIS QRCODE" },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "PDF_417", Description="TEST" }
             };
         }
 

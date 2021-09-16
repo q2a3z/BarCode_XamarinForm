@@ -1,0 +1,18 @@
+[
+    {
+      "Text": "QR_CODE",
+      "Description": "THIS IS QRCODE"
+    },
+    {
+      "Text": "EAN_13",
+      "Description": "123456789012"
+    },
+    {
+      "Text": "CODE128",
+      "Description": "387875748478"
+    },
+    {
+      "Text": "PDF_417",
+      "Description": "TEST"
+    }
+]

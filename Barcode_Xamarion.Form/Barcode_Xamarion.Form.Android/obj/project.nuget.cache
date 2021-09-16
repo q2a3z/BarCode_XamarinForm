@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8gxwNNySU6wSVF36SAbavPrKzT8uTBtjJUSrf8Dn9c7nmBDi3R962IRmxNfNxfeT4kGtG6mdkE3IbAfigc0qbw==",
+  "dgSpecHash": "dCMpdILIAvh0OAKiImI71lx5tmfsyNGSNEkcvZAo/yGKnAvZ748mZoy24orx17ThxNzy2Vvjk96sETcedzqBzQ==",
   "success": true,
   "projectFilePath": "D:\\Dev_Project\\Barcode_Xamarin.Form\\Barcode_Xamarion.Form\\Barcode_Xamarion.Form.Android\\Barcode_Xamarion.Form.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wayne\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
+    "C:\\Users\\Wayne\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Wayne\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",

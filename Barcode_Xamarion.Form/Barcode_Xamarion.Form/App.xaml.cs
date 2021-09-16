@@ -1,8 +1,5 @@
 ﻿using Barcode_Xamarion.Form.Services;
-using Barcode_Xamarion.Form.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Barcode_Xamarion.Form
 {

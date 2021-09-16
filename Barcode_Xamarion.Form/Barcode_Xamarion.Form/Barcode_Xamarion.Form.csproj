@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="LibJsonResource.json" />
+    <None Remove="TestBarcode.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LibJsonResource.json" />
+    <EmbeddedResource Include="TestBarcode.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />  
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="3.0.0-beta5" />
