@@ -17,5 +17,16 @@ namespace Barcode_Xamarion.Form.Views
             InitializeComponent();
             BindingContext = new NewItemViewModel();
         }
+
+        void MyPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var picker = (Picker)sender;
+            int selectedIndex = picker.SelectedIndex;
+
+            if (selectedIndex != -1)
+            {
+                TypeText.Text = (string)picker.ItemsSource[selectedIndex];
+            }
+        }
     }
 }

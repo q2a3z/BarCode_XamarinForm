@@ -30,8 +30,8 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="Barcode Scanner" Icon="icon_about.png" Route="BarcodeScanPage" ContentTemplate="{DataTemplate local:BarcodeScanPage}" />
         <ShellContent Title="Browse" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="Barcode Scanner" Icon="icon_about.png" Route="BarcodeScanPage" ContentTemplate="{DataTemplate local:BarcodeScanPage}" />
     </TabBar>
 
     <!--

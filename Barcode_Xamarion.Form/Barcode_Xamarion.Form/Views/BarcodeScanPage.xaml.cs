@@ -16,8 +16,8 @@ namespace Barcode_Xamarion.Form.Views
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                scanResultText.Text = result.Text + "(type: " +
-                result.BarcodeFormat.ToString() + "";
+                scanResultText.Text = result.Text; 
+                scanResultTypeText.Text = "(type: " + result.BarcodeFormat.ToString() + ")";
             });
         }
     }
