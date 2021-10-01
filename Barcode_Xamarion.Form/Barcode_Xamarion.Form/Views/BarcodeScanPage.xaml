@@ -43,8 +43,8 @@
                      Grid.Column="0" 
                      Style = "{StaticResource BarcodeMaskBoxView}"
             >
-            <Label x:Name="scanResultText" Text="TEST" HorizontalOptions="Center" />
-            <Label x:Name="scanResultTypeText" Text="2"  HorizontalOptions="Center"/>
+            <Label x:Name="scanResultText" Text="TEST" HorizontalOptions="Center" TextColor="White" />
+            <Label x:Name="scanResultTypeText" Text="2"  HorizontalOptions="Center" TextColor="White"/>
         </StackLayout>
         <!--
             <BoxView Grid.Row="0" 

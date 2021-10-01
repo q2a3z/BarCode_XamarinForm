@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Barcode_Xamarion.Form.Views.ItemsPage"
              Title="{Binding Title}"
-             xmlns:local="clr-namespace:Barcode_Xamarion.Form.ViewModels"  
-             xmlns:model="clr-namespace:Barcode_Xamarion.Form.Models"  
+             xmlns:local="clr-namespace:Barcode_Xamarion.Form.ViewModels"
+             xmlns:model="clr-namespace:Barcode_Xamarion.Form.Models"
              x:Name="BrowseItemsPage">
-
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
     </ContentPage.ToolbarItems>
@@ -17,14 +16,28 @@
     <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
         <CollectionView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
-                SelectionMode="None">
+                SelectionMode="None"
+                ItemsLayout="VerticalGrid, 2" 
+                EmptyView="No items to display"
+                >
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Item">
+                        <Image Grid.Row="0"
+                        Grid.RowSpan="3"
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFill"
+                        Source="{Binding Text, Converter={local:ImageResourceExtension}}" 
+                         />
                         <Label Text="{Binding Text}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
+                        <BoxView Grid.Row="2"
+                         HeightRequest="5"
+                         BackgroundColor="SeaGreen"
+                         Opacity="0.4" />
                         <Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"

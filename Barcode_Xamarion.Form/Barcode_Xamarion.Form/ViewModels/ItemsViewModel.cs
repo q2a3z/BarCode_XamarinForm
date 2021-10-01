@@ -5,11 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Barcode_Xamarion.Form.ViewModels
 {
@@ -47,7 +49,6 @@ namespace Barcode_Xamarion.Form.ViewModels
                 {
                     Items.Add(item);
                 }
-
             }
             catch (Exception ex)
             {
@@ -108,6 +109,54 @@ namespace Barcode_Xamarion.Form.ViewModels
 
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
+        }
+    }
+
+
+    [ContentProperty(nameof(Source))]
+    public class ImageResourceExtension : IMarkupExtension ,IValueConverter
+    {
+
+        public string Source { get; set; }
+
+        //Source→View
+        //ViewModelやコードビハインドからXaml側へ
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            string embeddedResourcePath = "Barcode_Xamarion.Form.Images.";
+            if (value.ToString().Equals("QR_CODE"))
+                embeddedResourcePath += "QRcode.png";
+            else
+                embeddedResourcePath += "barcode.png";
+            var imageSource = ImageSource.FromResource(embeddedResourcePath, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
+
+            return imageSource;
+        }
+
+        //View→Source
+        //Xaml側からViewModelやコードビハインドへ
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object ProvideValue(IServiceProvider serviceProvider)
+        {
+
+            /*
+            Source = "Barcode_Xamarion.Form.Images.barcode.png";
+
+            if (Source == null)
+            {
+                return null;
+            }
+
+            // Do your translation lookup here, using whatever method you require
+            var imageSource = ImageSource.FromResource(Source, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
+
+            return imageSource;
+            */
+            return this;
         }
     }
 }

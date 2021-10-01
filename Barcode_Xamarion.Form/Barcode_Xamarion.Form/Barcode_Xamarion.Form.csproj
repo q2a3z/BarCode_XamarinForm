@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,11 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Aztec.png" />
+    <None Remove="Images\barcode.png" />
+    <None Remove="Images\DataMatrix.png" />
+    <None Remove="Images\QRcode.png" />
     <None Remove="LibJsonResource.json" />
     <None Remove="TestBarcode.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\Aztec.png" />
+    <EmbeddedResource Include="Images\barcode.png" />
+    <EmbeddedResource Include="Images\DataMatrix.png" />
+    <EmbeddedResource Include="Images\QRcode.png" />
     <EmbeddedResource Include="LibJsonResource.json" />
     <EmbeddedResource Include="TestBarcode.json" />
   </ItemGroup>

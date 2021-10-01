@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -21,6 +22,7 @@ namespace Barcode_Xamarion.Form.Views
             InitializeComponent();
 
             BindingContext = _viewModel = new ItemsViewModel();
+
         }
 
         protected override void OnAppearing()
